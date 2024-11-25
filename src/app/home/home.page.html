@@ -1,20 +1,26 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="tertiary">
     <ion-title>
-      Blank
+      Perfumes
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="ion-padding" style="background-color: #f3f4f8;">
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+    <ion-toolbar color="tertiary">
+      <ion-title size="large">¡Explora el Mundo de los Perfumes!</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="container" style="text-align: center; margin-top: 20px;">
+    <ion-icon name="flower" size="large" style="color: #c47b8e;"></ion-icon>
+    <h1 style="font-weight: bold; color: #504e4e;">Bienvenido a la Fragancia Perfecta 🌹</h1>
+    <p style="color: #6e6b6b; font-size: 16px;">
+      Descubre los aromas más exquisitos y encuentra tu fragancia ideal con nuestra experiencia interactiva.
+    </p>
+    <ion-button expand="block" color="secondary" (click)="navigateTopage1()">
+      ¡Ir a la galería de perfumes!
+    </ion-button>
   </div>
 </ion-content>
